@@ -60,6 +60,9 @@
       <label>Titel<input id="entryTitle" required maxlength="80" placeholder="z. B. Mathe-Vorlesung"></label>
       <div class="two-col"><label>Datum<input id="entryDate" type="date" required></label><label>Typ<select id="entryType"><option value="event">Termin</option><option value="task">Aufgabe / Frist</option></select></label></div>
       <div class="two-col" id="timeRow"><label>Beginn<input id="entryStart" type="time"></label><label>Ende<input id="entryEnd" type="time"></label></div>
+      <label id="repeatRow">Wiederholung<select id="entryRepeat"><option value="none">Keine Wiederholung</option><option value="weekly">Jede Woche</option><option value="monthly">Jeden Monat</option><option value="yearly">Jedes Jahr</option></select></label>
+      <label id="repeatUntilRow" class="hidden">Wiederholen bis (optional)<input id="entryRepeatUntil" type="date"></label>
+      <p id="seriesHelp" class="form-help hidden">Änderungen an diesem Termin gelten für die gesamte Serie. Einzelne Vorkommen lassen sich nicht separat ändern oder löschen.</p>
       <label>Kategorie<select id="entryCategory"></select></label>
       <label>Notiz<textarea id="entryNote" rows="2" placeholder="Optional"></textarea></label>
       <div class="dialog-actions"><button type="button" class="danger hidden" id="deleteEntry">Löschen</button><button class="primary" value="save">Speichern</button></div>
